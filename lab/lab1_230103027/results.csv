@@ -1,0 +1,13 @@
+experiment,threads,variant,run1_s,run2_s,run3_s,avg_time_s,result
+sequential,1,baseline,3.540,3.265,3.244,3.2545,checksum=57998076
+scaling,1,openmp,3.535,3.839,3.329,3.5840,checksum=57998076
+scaling,2,openmp,1.673,1.696,1.667,1.6815,checksum=57998076
+scaling,4,openmp,1.154,1.033,1.195,1.1140,checksum=57998076
+scaling,8,openmp,0.639,0.651,0.636,0.6435,checksum=57998076
+false_sharing,4,naive,,,,1.070,hits=10491962
+false_sharing,4,reduction,,,,0.881,hits=10491962
+scheduling,4,static,,,,1.008,hits=10491962
+scheduling,4,static_1000,,,,0.988,hits=10491962
+scheduling,4,dynamic_100,,,,0.936,hits=10491962
+scheduling,4,dynamic_10000,,,,0.945,hits=10491962
+scheduling,4,guided,,,,0.965,hits=10491962
